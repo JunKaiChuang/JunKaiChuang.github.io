@@ -77,7 +77,7 @@
     <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
     <script src="https://js.tappaysdk.com/tpdirect/v5.13.1"></script>
     <script>
-        TPDirect.setupSDK(126118, 'app_ac5l9jicOOEBrsa0yh386Xm81dxX4hgJMNT3zcebv8kuDIVZ5O1RL3Wf8JHm', 'sandbox')
+        TPDirect.setupSDK(126159, 'app_4oWeLLwLW2isNNHpk25lfrky2yckayia5Y4lHc1M839vyyEskDlgNyGaOSu4', 'sandbox')
         TPDirect.card.setup({
             fields: {
                 number: {
@@ -203,9 +203,9 @@
                 Use following command to send to server \n\n
                 curl -X POST https://sandbox.tappaysdk.com/tpc/payment/pay-by-prime \\
                 -H 'content-type: application/json' \\
-                -H 'x-api-key: partner_6ID1DoDlaPrfHw6HBZsULfTYtDmWs0q0ZZGKMBpp4YICWBxgK97eK3RM' \\
+                -H 'x-api-key: partner_uhBflHIlzisCW1LCaePrzDOOHn1HawABURZjcd1JMtbuV4GJFKujK1DR' \\
                 -d '{
-                    "partner_key": "partner_6ID1DoDlaPrfHw6HBZsULfTYtDmWs0q0ZZGKMBpp4YICWBxgK97eK3RM",
+                    "partner_key": "partner_uhBflHIlzisCW1LCaePrzDOOHn1HawABURZjcd1JMtbuV4GJFKujK1DR",
                     "prime": "${result.card.prime}",
                     "amount": "1",
                     "merchant_id": "GlobalTesting_CTBC",
