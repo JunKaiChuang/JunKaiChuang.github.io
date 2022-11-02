@@ -192,6 +192,8 @@
                 return
             }
 
+            const deviceId = TPDirect.getDeviceId()
+
             // Get prime
             TPDirect.card.getPrime(function (result) {
                 if (result.status !== 0) {
@@ -207,6 +209,7 @@
                 -d '{
                     "partner_key": "partner_uhBflHIlzisCW1LCaePrzDOOHn1HawABURZjcd1JMtbuV4GJFKujK1DR",
                     "prime": "${result.card.prime}",
+                    "device_id": "${deviceId}",
                     "amount": "1",
                     "merchant_id": "GlobalTesting_CTBC",
                     "details": "Some item",
