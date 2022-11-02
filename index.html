@@ -192,14 +192,16 @@
                 return
             }
 
-            const deviceId = TPDirect.getDeviceId()
-
             // Get prime
             TPDirect.card.getPrime(function (result) {
                 if (result.status !== 0) {
                     alert('get prime error ' + result.msg)
                     return
                 }
+
+                const deviceId = TPDirect.getDeviceId()
+                console.log(deviceId)
+
                 alert('get prime 成功，prime: ' + result.card.prime)
                 var command = `
                 Use following command to send to server \n\n
